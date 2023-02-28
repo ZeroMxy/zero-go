@@ -17,7 +17,7 @@ func (this *Provider) Route_server (app *fiber.App) {
 		Format :		"[${time}] ${status} ${method} ${protocol}://${host}${url} ${resBody}\n",
 		TimeZone : 		"Asia/Chongqing",
 		TimeFormat : 	"2006-01-02 15:04:05",
-		Output : 		log.Initialize("system"),
+		Output : 		log.Initialize(),
 	}))
 
 	// 路由注册
